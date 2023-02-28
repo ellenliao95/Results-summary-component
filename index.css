@@ -4,16 +4,17 @@ body{
     min-height: 100vh;
     place-content: center;
     display: grid;
+    font-family: 'Hanken Grotesk', sans-serif;
+    margin: 0;
 }
 /* left-site*/
 
 h1{
     color: hsl(0, 0%, 100%);
-    font-family: 'Hanken Grotesk', sans-serif;
 }
 .bottom-bg{
     width: 600px;
-    height: 410px;
+    height: fit-content;
     border-radius: 20px;
     background: hsl(0, 0%, 100%);
     display: flex;
@@ -66,21 +67,23 @@ h1{
     text-align: left;
     color: hsl(224, 30%, 27%);
     margin-left: 30px;
-    font-family: 'Hanken Grotesk', sans-serif;
 }
+
 .container{
     list-style: none;
     display: flex;
     justify-content: space-between;
-    border: 1px solid none;
+    align-items: center;
     border-radius: 15px;
-    padding: 12px;
-    width: 200px;
+    padding: 4px;
+    width: 100%;
     margin: 20px auto;
 }
+
 .container-left{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
+    align-items: center;
 }
 
 /* container Background color */
@@ -113,25 +116,30 @@ h1{
 }
 .li-num-2{
     color: hsl(224, 31%, 41%);
-    font-family: 'Hanken Grotesk', sans-serif;
 }
 .li-num-3{
     color: hsla(241, 36%, 76%, 0.865);
-    font-family: 'Hanken Grotesk', sans-serif;
 }
-
-
 
 button{
     width: 250px;
     height: 50px;
     border: none;
     border-radius: 25px;
+    background: hsl(224, 30%, 27%); /*use this color normally*/
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/*use linear-gradiant background, when somone hovers over the button*/
+button:hover{
     background:
     linear-gradient(
         hsl(252, 100%, 67%), 
         hsl(241, 81%,  54%) ) ;
-    color: hsl(0, 0%, 100%);
-    font-size: 18px;
-    cursor: pointer;
+}
+
+@media screen and (max-width: 720px){
+    /*Your code for small screens here*/
 }
